@@ -25,16 +25,32 @@
 
         header {
             background-color: white;
-            padding: 50px 20px;
+            padding: 40px 20px;
             text-align: center;
             border-bottom: 5px solid var(--cor-fundo-card);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Estilo do Banner Responsivo */
+        .banner-container {
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .banner-logo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            width: 400px; /* Tamanho base para desktop */
         }
 
         .logo-text {
             font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            margin: 0;
+            font-size: 2.5rem;
+            margin: 10px 0 0 0;
             text-transform: uppercase;
             letter-spacing: 2px;
             font-weight: 700;
@@ -50,7 +66,7 @@
 
         .cardapio-title {
             font-style: italic;
-            margin-top: 20px;
+            margin-top: 15px;
             font-size: 1.2rem;
             color: var(--cor-detalhe);
         }
@@ -142,14 +158,22 @@
         }
 
         footer { text-align: center; padding: 50px 20px; color: white; font-size: 0.85rem; }
+
+        @media (max-width: 600px) {
+            .banner-logo { width: 85%; }
+            .logo-text { font-size: 1.8rem; }
+            .item-cardapio { flex-direction: column; align-items: flex-start; }
+            .item-preco { margin: 5px 0; }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-text">Edilene Reis</div>
-    <span class="logo-sub">BOLOS E DOCES</span>
-    <p class="cardapio-title">Cardápio Digital</p>
+    <div class="banner-container">
+        <img src="logo_edilene.png" alt="Logo Edilene Reis" class="banner-logo">
+    </div>
+    <strong><p class="cardapio-title">Cardápio Digital</p></strong>
 </header>
 
 <div class="container">
@@ -255,7 +279,7 @@
         <div class="item-cardapio"><div class="item-info"><span class="item-nome">Red Velvet</span><span class="item-desc">Massa red velvet original, recheio de cream cheese.</span></div><div class="item-preco">R$ 95/kg</div><a href="#" class="btn-pedido" data-item="Bolo Red Velvet">Pedir</a></div>
     </div>
 
-        <div class="info-encomenda">
+    <div class="info-encomenda">
         <h3 style="text-align: center; color: var(--cor-detalhe); text-transform: uppercase;">Informações Importantes</h3>
         <ul>
             <li>A encomenda de bolos, doces e pães de mel deve ser feita com pelo menos <strong>5 dias de antecedência</strong>;</li>
@@ -288,7 +312,6 @@
 <script>
     const telefone = "554498544435";
     
-    // Pedido por item
     document.querySelectorAll('.btn-pedido').forEach(botao => {
         botao.addEventListener('click', (e) => {
             e.preventDefault();
@@ -298,7 +321,6 @@
         });
     });
 
-    // Botão flutuante (Geral)
     document.getElementById('btn-flutuante').addEventListener('click', (e) => {
         e.preventDefault();
         const msgGeral = encodeURIComponent("Olá Edilene! Vi seu cardápio e gostaria de tirar uma dúvida sobre as encomendas.");
