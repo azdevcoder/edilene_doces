@@ -97,15 +97,12 @@
             background-color: #25d366;
             color: white;
             text-decoration: none;
-            padding: 5px 12px;
+            padding: 6px 15px;
             border-radius: 20px;
             font-size: 0.8rem;
             font-weight: 600;
             transition: 0.3s;
-            display: inline-block;
         }
-
-        .btn-pedido:hover { background-color: #128c7e; transform: scale(1.05); }
 
         .sub-lista-doces {
             font-size: 0.9rem;
@@ -123,9 +120,6 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        .info-encomenda ul { padding-left: 25px; }
-        .info-encomenda li { margin-bottom: 10px; }
-
         .btn-whatsapp-fixo {
             display: block;
             background-color: #25d366;
@@ -139,13 +133,9 @@
             max-width: 320px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.25);
             font-size: 1.1rem;
-            transition: transform 0.2s;
         }
 
-        .btn-whatsapp-fixo:hover { transform: scale(1.05); }
-
         footer { text-align: center; padding: 50px 20px; color: white; font-size: 0.85rem; }
-        footer a { color: white; font-weight: 600; }
     </style>
 </head>
 <body>
@@ -202,22 +192,62 @@
         <div class="item-cardapio">
             <div class="item-info"><span class="item-nome">Laranja</span></div>
             <div class="item-preco">R$ 30,00</div>
-            <a href="#" class="btn-pedido" data-item="Bolo Caseiro de Laranja">Pedir</a>
+            <a href="#" class="btn-pedido" data-item="Bolo de Laranja">Pedir</a>
         </div>
         <div class="item-cardapio">
             <div class="item-info"><span class="item-nome">Limão</span></div>
             <div class="item-preco">R$ 30,00</div>
-            <a href="#" class="btn-pedido" data-item="Bolo Caseiro de Limão">Pedir</a>
+            <a href="#" class="btn-pedido" data-item="Bolo de Limão">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Fubá com Goiabada</span></div>
+            <div class="item-preco">R$ 30,00</div>
+            <a href="#" class="btn-pedido" data-item="Bolo de Fubá com Goiabada">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Fubá Cremoso</span></div>
+            <div class="item-preco">R$ 30,00</div>
+            <a href="#" class="btn-pedido" data-item="Bolo de Fubá Cremoso">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Churros</span></div>
+            <div class="item-preco">R$ 30,00</div>
+            <a href="#" class="btn-pedido" data-item="Bolo de Churros">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Coco</span></div>
+            <div class="item-preco">R$ 30,00</div>
+            <a href="#" class="btn-pedido" data-item="Bolo de Coco">Pedir</a>
         </div>
         <div class="item-cardapio">
             <div class="item-info"><span class="item-nome">Chocolate com Brigadeiro</span></div>
             <div class="item-preco">R$ 30,00</div>
-            <a href="#" class="btn-pedido" data-item="Bolo Caseiro de Chocolate com Brigadeiro">Pedir</a>
+            <a href="#" class="btn-pedido" data-item="Bolo de Chocolate com Brigadeiro">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Cuca de Banana</span></div>
+            <div class="item-preco">R$ 30,00</div>
+            <a href="#" class="btn-pedido" data-item="Cuca de Banana">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Banana Caramelizada</span></div>
+            <div class="item-preco">R$ 30,00</div>
+            <a href="#" class="btn-pedido" data-item="Bolo de Banana Caramelizada">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Cenoura com Brigadeiro</span></div>
+            <div class="item-preco">R$ 30,00</div>
+            <a href="#" class="btn-pedido" data-item="Bolo de Cenoura com Brigadeiro">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Formigueiro</span></div>
+            <div class="item-preco">R$ 30,00</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Formigueiro">Pedir</a>
         </div>
         <div class="item-cardapio">
             <div class="item-info"><span class="item-nome">Bolo de Milho</span></div>
             <div class="item-preco">R$ 35,00</div>
-            <a href="#" class="btn-pedido" data-item="Bolo Caseiro de Milho">Pedir</a>
+            <a href="#" class="btn-pedido" data-item="Bolo de Milho">Pedir</a>
         </div>
     </div>
 
@@ -226,7 +256,7 @@
         <div class="item-cardapio">
             <div class="item-info">
                 <span class="item-nome">Sabores Tradicionais</span>
-                <span class="item-desc">Brigadeiro, Coco, Maracujá, Limão, Churros...</span>
+                <span class="item-desc">Brigadeiro, Coco, Maracujá, Amendoim, Limão, Bicho de pé, Churros, Abacaxi, Cajuzinho, Chocolate.</span>
             </div>
             <div class="item-preco">R$ 130,00</div>
             <a href="#" class="btn-pedido" data-item="Cento de Doces Tradicionais">Pedir</a>
@@ -234,7 +264,7 @@
         <div class="item-cardapio">
             <div class="item-info">
                 <span class="item-nome">Sabores Especiais</span>
-                <span class="item-desc">Ninho com Nutella, Pistache, Caramelo Crocante...</span>
+                <span class="item-desc">Caramelo crocante, Dois amores, Choc. Meio Amargo, Branco, Ninho c/ Nutella, Olho de sogra, Coco queimado, Uva, Morango, Pistache.</span>
             </div>
             <div class="item-preco">R$ 145,00</div>
             <a href="#" class="btn-pedido" data-item="Cento de Doces Especiais">Pedir</a>
@@ -243,77 +273,145 @@
 
     <div class="secao">
         <h2>Bolos Recheados (kg)</h2>
+        
         <div class="item-cardapio">
-            <div class="item-info">
-                <span class="item-nome">Brigadeiro</span>
-                <span class="item-desc">Massa de chocolate, recheio de brigadeiro meio amargo.</span>
-            </div>
+            <div class="item-info"><span class="item-nome">Brigadeiro</span><span class="item-desc">Massa chocolate, recheio brigadeiro meio amargo.</span></div>
             <div class="item-preco">R$ 80/kg</div>
-            <a href="#" class="btn-pedido" data-item="Bolo Recheado Brigadeiro">Pedir</a>
+            <a href="#" class="btn-pedido" data-item="Bolo Brigadeiro">Pedir</a>
         </div>
         <div class="item-cardapio">
-            <div class="item-info">
-                <span class="item-nome">Ninho com Morango</span>
-                <span class="item-desc">Massa branca, brigadeiro de ninho e morangos frescos.</span>
-            </div>
+            <div class="item-info"><span class="item-nome">Casadinho</span><span class="item-desc">Massa chocolate, brigadeiro meio amargo e branco.</span></div>
+            <div class="item-preco">R$ 80/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Casadinho">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Olho de Sogra</span><span class="item-desc">Massa baunilha, doce de leite com ameixa.</span></div>
+            <div class="item-preco">R$ 80/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Olho de Sogra">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Prestígio</span><span class="item-desc">Massa chocolate, brigadeiro e coco.</span></div>
+            <div class="item-preco">R$ 80/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Prestígio">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Doce Sabor</span><span class="item-desc">Massa baunilha, doce de leite, ameixa e coco queimado.</span></div>
+            <div class="item-preco">R$ 80/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Doce Sabor">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Torta Mineira</span><span class="item-desc">Massa branca, brigadeiro de coco e abacaxi.</span></div>
+            <div class="item-preco">R$ 80/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Torta Mineira">Pedir</a>
+        </div>
+
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Chocolatudo</span><span class="item-desc">Massa chocolate/café, ganache e nozes.</span></div>
             <div class="item-preco">R$ 90/kg</div>
-            <a href="#" class="btn-pedido" data-item="Bolo Recheado Ninho com Morango">Pedir</a>
+            <a href="#" class="btn-pedido" data-item="Bolo Chocolatudo">Pedir</a>
         </div>
         <div class="item-cardapio">
-            <div class="item-info">
-                <span class="item-nome">Red Velvet</span>
-                <span class="item-desc">Massa aveludada, recheio de cream cheese.</span>
-            </div>
+            <div class="item-info"><span class="item-nome">Delícia de Abacaxi</span><span class="item-desc">Massa abacaxi, trufa branca e abacaxi caramelizado.</span></div>
+            <div class="item-preco">R$ 90/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Delícia de Abacaxi">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Duo de Chocolate</span><span class="item-desc">Trufa meio amarga e trufa branca.</span></div>
+            <div class="item-preco">R$ 90/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Duo de Chocolate">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Ferreiro Rocher</span><span class="item-desc">Ganache, Nutella e avelã.</span></div>
+            <div class="item-preco">R$ 90/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Ferreiro Rocher">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Ninho com Nutella</span><span class="item-desc">Brigadeiro de Nutella e leite ninho.</span></div>
+            <div class="item-preco">R$ 90/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Ninho com Nutella">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Ninho com Morango</span><span class="item-desc">Leite ninho e morangos frescos.</span></div>
+            <div class="item-preco">R$ 90/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Ninho com Morango">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Ninho com Frutas Vermelhas</span><span class="item-desc">Ninho e geleia de frutas vermelhas.</span></div>
+            <div class="item-preco">R$ 90/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Ninho com Frutas Vermelhas">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Explosão de Nozes</span><span class="item-desc">Doce de leite, chocolate e nozes.</span></div>
+            <div class="item-preco">R$ 90/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Explosão de Nozes">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Maracujá</span><span class="item-desc">Ganache de maracujá e chocolate.</span></div>
+            <div class="item-preco">R$ 90/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo de Maracujá">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Martha Rocha</span><span class="item-desc">Massa duo, doce de ovos, nozes e ameixa.</span></div>
+            <div class="item-preco">R$ 90/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Martha Rocha">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Sensação</span><span class="item-desc">Mousse de morango e trufado de chocolate.</span></div>
+            <div class="item-preco">R$ 90/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Sensação">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Nozes</span><span class="item-desc">Creme bariloche, doce de leite e nozes.</span></div>
+            <div class="item-preco">R$ 90/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo de Nozes">Pedir</a>
+        </div>
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Paixão Mineira</span><span class="item-desc">Doce de leite, abacaxi, coco e ameixa.</span></div>
+            <div class="item-preco">R$ 90/kg</div>
+            <a href="#" class="btn-pedido" data-item="Bolo Paixão Mineira">Pedir</a>
+        </div>
+
+        <div class="item-cardapio">
+            <div class="item-info"><span class="item-nome">Red Velvet</span><span class="item-desc">Massa red velvet e cream cheese.</span></div>
             <div class="item-preco">R$ 95/kg</div>
-            <a href="#" class="btn-pedido" data-item="Bolo Recheado Red Velvet">Pedir</a>
+            <a href="#" class="btn-pedido" data-item="Bolo Red Velvet">Pedir</a>
         </div>
     </div>
 
-       <div class="info-encomenda">
+    <div class="info-encomenda">
         <h3 style="text-align: center; color: var(--cor-detalhe); text-transform: uppercase;">Informações Importantes</h3>
         <ul>
-            <li>A encomenda de bolos, doces e pães de mel deve ser feita com pelo menos <strong>5 dias de antecedência</strong>;</li>
-            <li>A decoração é escolha da cliente, caso necessite de topper será cobrado valor a parte;</li>
-            <li>Fazemos entregas por Maringá com taxa (verificar localidade);</li>
-            <li>Caso queira um sabor do bolo diferente, entre em contato pelo WhatsApp.</li>
-        </ul>
-        
-        <h3 style="text-align: center; color: var(--cor-detalhe); text-transform: uppercase; margin-top: 25px;">Formas de Pagamento</h3>
-        <ul style="list-style-type: none; text-align: center; padding: 0;">
-            <li>Dinheiro</li>
-            <li>Cartão de débito e crédito (com taxa)</li>
-            <li>Transferência bancária/boleto</li>
-            <li><strong>Pix</strong></li>
+            <li>Encomendas com pelo menos 5 dias de antecedência.</li>
+            <li>Entregas em Maringá com taxa sob consulta.</li>
+            <li>Pagamento: Pix, Dinheiro ou Cartão.</li>
         </ul>
     </div>
 
-    <a href="#" class="btn-whatsapp-fixo" id="btn-geral">Chamar no WhatsApp</a>
+    <a href="#" class="btn-whatsapp-fixo" id="btn-geral">Dúvidas? Chame no WhatsApp</a>
 
 </div>
 
 <footer>
     <p>&copy; 2026 Edilene Reis - Maringá/PR</p>
-    <p>Siga-nos no Instagram <a href="https://www.instagram.com/edilene.doces" target="_blank">@edilene.doces</a></p>
+    <p>Siga no Instagram <a href="https://www.instagram.com/edilene.doces" target="_blank">@edilene.doces</a></p>
 </footer>
 
 <script>
     const telefone = "554498544435";
     
-    // Configura botões de itens específicos
     document.querySelectorAll('.btn-pedido').forEach(botao => {
         botao.addEventListener('click', (e) => {
             e.preventDefault();
             const item = botao.getAttribute('data-item');
-            const mensagem = encodeURIComponent(`Olá Edilene! Gostaria de encomendar: *${item}*`);
-            window.open(`https://wa.me/${telefone}?text=${mensagem}`, '_blank');
+            const msg = encodeURIComponent(`Olá Edilene! Gostaria de encomendar: *${item}*`);
+            window.open(`https://wa.me/${telefone}?text=${msg}`, '_blank');
         });
     });
 
-    // Configura botão geral
     document.getElementById('btn-geral').addEventListener('click', (e) => {
         e.preventDefault();
-        const mensagemGeral = encodeURIComponent("Olá Edilene! Vi seu cardápio digital e gostaria de tirar uma dúvida.");
-        window.open(`https://wa.me/${telefone}?text=${mensagemGeral}`, '_blank');
+        const msgGeral = encodeURIComponent("Olá Edilene! Gostaria de mais informações sobre suas encomendas.");
+        window.open(`https://wa.me/${telefone}?text=${msgGeral}`, '_blank');
     });
 </script>
 
