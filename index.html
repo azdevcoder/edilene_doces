@@ -442,4 +442,26 @@
 </footer>
 
 </body>
+    <script>
+    const configLoja = {
+        telefone: "554498544435",
+        mensagemGeral: "Olá! Gostaria de fazer um pedido."
+    };
+
+    function configurarBotoes() {
+        const botoes = document.querySelectorAll('.btn-pedido');
+        botoes.forEach(botao => {
+            const card = botao.closest('.card');
+            let mensagem = configLoja.mensagemGeral;
+            if (card) {
+                const nomeDoce = card.querySelector('h3').innerText;
+                mensagem = `Olá Edilene! Gostaria de encomendar: *${nomeDoce}*`;
+            }
+            botao.href = `https://wa.me/${configLoja.telefone}?text=${encodeURIComponent(mensagem)}`;
+            botao.target = "_blank";
+        });
+    }
+
+    window.onload = configurarBotoes;
+</script>
 </html>
